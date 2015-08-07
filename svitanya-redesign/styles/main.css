@@ -1,0 +1,1244 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*    BEGIN STYLES FOR GLOBAL TEMPLATE    //    */
+
+			@import url(http://fonts.googleapis.com/css?family=Eagle+Lake);
+			
+			
+			body { 
+				margin:0; 
+				font-family:'tahoma';
+				background-image: url('../images/CroatianSquareredcrsmallest.JPG');
+				background-attachment: fixed; /* this keeps the background image fixed, while rest of page scrolls*/
+				padding: 3%;
+			}
+			
+			
+			#wrapper {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 1%;	
+				background: rgba(255,255,255,.7);
+				border-radius: 60px;  
+				background: -moz-linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.86) 22%, rgba(255,255,255,0.69) 50%, rgba(255,255,255,0.88) 80%, rgba(255,255,255,1) 100%);
+				background: -webkit-linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.86) 22%, rgba(255,255,255,0.69) 50%, rgba(255,255,255,0.88) 80%, rgba(255,255,255,1) 100%);
+				background: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,1)), color-stop(0.22, rgba(255,255,255,0.86)), color-stop(0.5, rgba(255,255,255,0.69)), color-stop(0.8, rgba(255,255,255,0.88)), to(rgba(255,255,255,1)));
+				background: -o-linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.86) 22%, rgba(255,255,255,0.69) 50%, rgba(255,255,255,0.88) 80%, rgba(255,255,255,1) 100%);
+				background: linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.86) 22%, rgba(255,255,255,0.69) 50%, rgba(255,255,255,0.88) 80%, rgba(255,255,255,1) 100%); /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+			}
+
+
+			#logo {
+				text-align: center;
+				width: 60%;
+				margin: 0 auto;
+				padding: 1.5%; 
+			}
+			
+			
+			#logo img{
+				max-width: 70%;
+			}
+			
+			
+			nav ul ul {
+				display: none;
+			}
+			
+			
+			nav ul li:hover > ul, nav ul li:active > ul {
+					display: block;
+			}
+			
+			
+			nav ul {
+				/*background: #5f6975; */
+				/*box-shadow: 0px 0px 9px rgba(0,0,0,0.15);*/
+				padding-left: 14%;
+				border-radius: 10px;  
+				list-style: none;
+				position: relative;
+				width:90%;
+				margin: 0 auto;
+			}
+			
+			
+			nav ul:after {
+				content: ""; 
+				clear: both; 
+				display: block;
+			}
+			
+			
+			nav ul li {
+				float: left;
+			}
+			
+			
+			nav ul li:hover, nav ul li:active {
+			  background: #4b545f;
+			}
+					
+			
+			nav ul li:hover a, nav ul li:active a {
+			  color: #fff;
+			}
+				
+				
+			nav ul li a {
+			  display: block; 
+			  padding: 10px 20px;
+			  color: #690303; 
+			  text-decoration: none;
+			  font-family: papyrus, sans-serif;
+			  font-size: 1.6em;
+			}
+			
+			
+			nav ul ul {
+				background: rgba(75, 84, 95, 0.8); 
+				border-radius: 0px; 
+				padding: 0;
+				position: absolute; 
+				top: 100%;
+				width: auto;
+				z-index: 99;
+			}
+			
+			
+			nav ul ul li {
+			  float: none; 
+			  border-top: 1px solid #6b727c;
+			  border-bottom: 1px solid #575f6a;
+			  position: relative;
+			}
+			
+			
+			nav ul ul li a {
+			  padding: 10px 40px;
+			  color: #fff;
+			}	
+			
+			
+			nav ul ul li a:hover, nav ul ul li a:active {
+			  background: rgba(75, 84, 95, 0.6);
+			  color: #CED0D6;
+			}
+			
+			
+			.hidden-nav {
+				display: none;
+			}
+			
+			
+			.arrows {
+				padding: 0;
+				margin: 0;
+				font-size: .75em;
+				display: inline-block;
+			}
+			
+			
+			.slicknav_menu {
+				display:none;
+			}
+			
+			
+			h1 {
+			  display: inline-block;
+			  margin: 0;
+			  font-family: papyrus, sans-serif;
+			  height: 33px;
+			}
+			  
+			  
+			h2 {
+				font-family: papyrus, sans-serif;
+				text-align: center;
+				font-size: 2em;
+				color: #690303;
+				margin: 0;
+				padding-top: 1%;
+			}
+			  
+			 
+			footer {
+				width: 80%;
+				padding: 2%;
+				margin: 0 auto;	
+			}
+			  
+			footer p {
+				font-size: 0.5em;
+				text-align: center;
+			}
+
+
+
+/*    //    END STYLES FOR GLOBAL TEMPLATE    */
+
+
+/*    BEGIN STYLES FOR RSLIDES PLUGIN (PHOTO SLIDESHOW)  //   */
+
+
+			.rslides {
+			  position: relative;
+			  list-style: none;
+			  overflow: hidden;
+			  width: 90%;
+			  padding: 0;
+			  margin: 0 auto;
+			 }
+			
+			
+			.rslides li {
+			  -webkit-backface-visibility: hidden;
+			  position: absolute;
+			  display: none;
+			  width: 100%;
+			  left: 0;
+			  top: 0;
+			 }
+			
+			
+			.rslides li:first-child {
+			  position: relative;
+			  display: block;
+			  float: left;
+			 }
+			
+			
+			.rslides img {
+			  display: block;
+			  height: auto;
+			  float: left;
+			  width: 100%;
+			  border: 0;
+			 }
+  
+  
+ /*  //  END STYLES FOR RSLIDES PLUGIN (PHOTO SLIDESHOW)  */
+ 
+ 
+ 
+ /*  BEGIN STYLES FOR HOME PAGE  //  */ 
+  
+			#main-content {
+				padding: 4%;  
+			 }
+			  
+			.homepage-left {
+				width: 30%;
+				height: auto;
+				padding-top: 1em;
+				padding-left:5%;
+				float: left;
+				text-align: center;
+				margin-top: 2%;
+			}
+			  
+			  
+			.news-date {
+				color: red;	
+				font-size: 0.8em;
+			}
+			  
+			.news-event {
+				font-size: 0.8em;	
+			}
+			  
+			  
+			.homepage-left img {
+				max-width: 60%;
+				
+				padding-top: 5%;
+			}
+			  
+			  
+			.homepage-news-headline {
+				  font-size: 1.5em;
+				  color: red;
+			  
+			}
+			  
+			  
+			#paypalDonate {
+				width: 60%;
+				margin-top: 3%;	
+			}
+			  
+			#home-text {
+				float: left;
+				padding-left: 4%;
+				width: 56%;
+				
+			}
+
+
+
+/*    //  END STYLES FOR HOME PAGE    */
+  
+
+
+/*    BEGIN STYLES FOR MUSIC PAGE  //    */
+
+
+			.soundcloud {
+				width: 50%;
+				padding: 2%;
+				margin: 0 auto;
+				text-align: center;
+				font-weight: bold;
+			}
+			
+			
+			.purchase p {
+				text-align: center;	
+			}
+			
+			
+			.album {
+				float: left;
+				width: 42%;
+				padding: 2%;
+				margin: 2%;
+				text-align: center;
+			}
+			
+			.album img {
+				max-width: 100%;	
+				text-align: center;
+				
+			}
+			
+			
+			.album-title {
+				font-family: papyrus, sans-serif;
+				font-size: 1.4em;
+				color: #690303;
+			}
+			
+			
+			.track-listing {
+				text-align: left;
+				padding-left: 10%;
+			}
+			
+			
+			.track-listing li{
+				text-align: left;
+			}
+
+/*    //  END STYLES FOR MUSIC PAGE    */
+
+
+/*    BEGIN STYLES FOR ABOUT PAGE    //    */
+
+			.about-left {
+				float: left;
+				width: 48%;
+				padding: 1%;
+			}
+			
+			
+			.about-right {
+				float: left;
+				width: 48%;
+				padding: 1%;
+			}
+			
+			
+			.about-left2, .about-right2 {
+				float: left;
+				width: 48%;
+				padding: 1%;	
+			}
+			
+			
+			.about-left2 {
+				text-align: center;
+				vertical-align:middle;
+			}
+			
+			
+			.about-left2 img {
+				max-width: 100%;	
+			}
+			
+			
+			.about-right2 p {
+				margin: 0 5%;	
+			}
+			
+			
+			#about-right-top-p {
+				padding-top: 3%;	
+			}
+			
+			
+/*    */			
+
+
+.singer-profile {
+	margin-bottom: 2%;	
+}
+
+
+.singer-image {
+	float: left;
+	width: 18%;
+	padding: 1%;	
+}
+
+
+.singer-image img {
+	width: 100%;	
+}
+
+
+.singer-bio {
+	float: left;
+	width: 68%;
+	padding: 1%;
+	margin-top: 2.5%;
+	min-height: 244px;
+	vertical-align: middle;
+	
+}
+
+
+.singer2 {
+	margin-top: 5%;	
+}
+
+
+.singer-bio p {
+	margin: 0;
+	text-align:justify;
+}
+
+
+.singer-flower {
+	float: left;
+	width: 8%;
+	padding: 1%;
+	margin-top: 4%;
+}
+
+
+.flower2 {
+	margin-top: 5%;
+}
+
+
+.flower3 {
+	margin-top: 6%;
+}
+
+
+.flower4 {
+	margin-top: 7%;	
+}
+
+
+.flower5 {
+	margin-top: 2%;	
+}
+
+.singer-flower img {
+	width: 100%;
+}
+
+
+.even {
+	float: right;
+}
+
+
+.singer-name {
+	font-family: papyrus, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #690303;
+	line-height: 1em;
+}
+
+
+.auditions-top {
+	width: 80%;
+	margin: 0 auto;	
+}
+
+.auditions-image {
+	float: left;
+	width: 48%;
+	padding: 1%;
+	padding-left: 5%;
+}
+	
+.auditions-image img {
+	width: 90%;
+}
+
+
+.auditions-text1 {
+	float: left;
+	width: 38%;
+	padding: 1%;
+	padding-top: 5%;
+}
+
+.auditions-text2 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.auditions-text2 ul {
+	padding-left: 10%;
+	font-size: 1em;
+	line-height: 1em;
+}
+
+.auditions-text2 ul li {
+	list-style: url(../../svitanya2/images/embr5C.png);
+	vertical-align: top;
+	line-height: 1em;
+}
+
+
+.event-date {
+	float: left;
+	width: 25%;
+	padding: 1%;	
+}
+
+
+.event-listing {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 2%;
+	
+	
+}
+
+.event-description {
+	float: left;
+	width: 	71%;
+	padding: 1%;
+}
+
+
+.vertical-pattern {
+	width: 6.8%;
+	float: left;
+	padding-right: 3%;	
+	margin: 0;
+	margin-left: 11%;
+	text-align: right;
+}
+
+.vertical-pattern img, .vertical-pattern2 img {
+	max-width: 100%;
+}
+
+.vertical-pattern2 {
+		width: 6.8%;
+	float: left;
+	padding-left: 3%;	
+	margin: 0;
+	text-align: left;
+}
+	
+
+.upcoming-images {
+	float: left;
+	width: 63.5%;
+	padding: 0;
+	margin: 0;
+}
+
+.upcoming-slides {
+	width: 100%;
+	margin: 0;
+}
+
+.rslides ul, .rslides ul li {
+	margin: 0;
+	padding: 0;
+		
+}
+
+.past-events {
+	margin: 0;	
+}
+
+
+.past-column1 {
+	width: 50%;
+	float: left;
+
+}
+
+.past-column2 {
+	width: 50%;
+	float: left;
+
+}
+
+
+.past-image-right {
+	padding-left: 2%;
+	width: 98%;
+
+}
+
+.past-image-right img {
+
+	max-width: 100%;
+}
+
+
+
+
+.past-image {
+	width: 32%;
+	padding: 2%;
+	margin: 0;
+	float: left;
+}
+
+.past-image2 {
+	width: 32%;
+	padding: 2%;
+	margin: 0;
+	float: right;
+}
+
+.past-image img, .past-image2 img {
+	width: 100%;	
+}
+
+.past-listings {
+	float: left;	
+	width: 62%;
+	padding: 0 0 2% 2%;
+	margin-bottom: 0;
+}
+
+.past-listings2 {
+	margin-top: 0;
+	float: right;	
+	width: 62%;
+	padding: 0 2% 2% 0;
+	text-align: right;
+}
+
+
+/*
+.past-events {
+	background-image: url('../images/Svitanya-0074-brighter-red-desat-med.jpg');
+	background-attachment: fixed; 
+	background-position:center middle;
+	background-repeat: no-repeat;
+	background: url('../images/Svitanya-0074-brighter-red-desat-med.jpg') center center no-repeat;
+}
+*/
+
+.past-events ul {
+	list-style: none;
+	
+}
+
+
+.booking-page2 {
+	width: 80%;	
+	margin: 0 auto;
+	padding: 2%;
+}
+
+
+.booking-page2 p {
+	text-align: center;	
+	font-size: 1.2em;
+}
+
+.booking-page2 ul {
+	padding-left: 10%;
+	font-size: 1em;
+	line-height: 1em;
+}
+
+.booking-page2 ul li {
+	list-style: url(../../svitanya2/images/embr5C.png);
+	vertical-align: top;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	padding-left: 3%;
+	margin-bottom: 4%;
+}
+
+
+.marketing-materials {
+	padding-left: 10%;	
+}
+
+
+.materials-left {
+	float: left;
+	width: 35%;
+	padding: 2%;	
+}
+
+.materials-left ul {
+	text-align: right;	
+	padding: 0;
+	margin-top: 0;
+}
+
+
+
+
+.materials-image {
+	width: 12%;
+	float: left;	
+	text-align: center;
+}
+
+.materials-image img {
+	width: 70%;
+	
+}
+
+
+.materials-right {
+	float: left;
+	width: 35%;
+	padding: 2%;	
+}
+
+.materials-right ul {
+	text-align: left;	
+	padding: 0;
+	margin-top: 0;
+}
+
+.materials-right ul li, .materials-left ul li {
+	list-style: none;
+	margin-bottom: 10%;
+		
+}
+
+.thumbnails img {
+	float: left;
+	width: 40%;
+	margin: 3%;	
+	
+}
+
+.thumbnails1, .thumbnails2 {
+	float: left;
+	width: 40%;
+	padding: 2%;	
+}
+
+.thumbnails {
+	padding-left: 9%;	
+}
+
+
+.thumbnails3 {
+	width: 40%;
+	margin: 0 auto;	
+}
+
+
+.bold {
+	font-weight: bold;
+	vertical-align: top;	
+}
+
+
+.contact-info {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.contact-item {
+	width: 90%;
+	padding: 2%;
+	margin: 0 auto 2% auto;
+	
+}
+
+.contact-heading {
+	font-style: italic;
+	color: #690303;	
+}
+
+.group:after {         /* this is to clear floats. put the class group on the div that directly contains the elements that are being floated */
+  content: "";
+  display: table;
+  clear: both;
+ }
+
+
+
+/*    -----------------------------------------------------------------     */
+/*																			*/
+/*              ****  Media Queries - For Responsive  ****                  */
+/*        Everything above this applies to screens at least 1101px wide     */
+/*																			*/
+/*    -----------------------------------------------------------------     */
+
+
+
+@media screen and (max-width: 1100px) {
+	
+	nav ul {
+		padding-left: 10.5%;
+		width:90%;
+	}
+	
+	.singer-bio {
+		margin-top: 0;	
+	}
+		
+	.homepage-left {
+		margin-top: 4%;	
+	}
+	
+	#about-right-top-p {
+		padding-top: 2%;	
+	}
+	
+	
+	
+}
+
+@media screen and (max-width: 1070px) {
+	.about-right {
+		margin-top: 2%;	
+	}
+	
+}
+
+
+@media screen and (max-width: 1000px) {
+	
+	nav ul {
+		padding-left: 7%;
+		width:96%;
+	}
+	
+	nav ul li a {
+		padding: 10px 15px;	
+	}
+	
+	.about-right {
+		margin-top: 4%;	
+	}
+	
+	.album {
+		width: 40%;
+	}
+	
+	.listen {
+		text-align: center;	
+	}
+	
+	.soundcloud {
+		float: none;
+		width: 60%;
+		margin: 0 auto;
+	}
+	
+	.auditions-image img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.event-date {
+		width: 80%;
+		margin: 0 auto;
+		text-align: left;	
+		padding-bottom: 0;
+	}
+	
+	.event-description {
+		width: 80%;
+		margin: 0 auto;
+		text-align: left;	
+		padding-top: 0;
+	}
+	
+	.event-listing {
+		padding-bottom: 5%;
+		padding-left: 18%;
+	}
+		
+		
+	.track-listing {
+		padding-left: 5%;	
+	}
+	
+	
+	
+}
+
+
+
+@media screen and (max-width: 950px) {
+
+	nav ul {
+		padding-left: 2.5%;
+	}
+	
+	#about-right-top-p {
+		padding-top: 2%;	
+	}
+	
+	.about-left, .about-right, .about-left2, .about-right2 {
+	float: none;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+		
+	
+}
+
+
+
+@media screen and (max-width: 900px) {
+nav ul {
+	padding-left: 2%;
+	
+}
+	
+nav ul li a {
+	font-size: 1.5em;
+}
+
+.about-right {
+	margin-top: 9%;	
+}
+
+
+
+
+.album {
+	float: none;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+
+
+.album ol {
+	text-align: left;
+	padding-left: 25%;
+}
+
+.soundcloud {
+	float: none;
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.music-page {
+	margin-bottom: 15%;	
+}
+
+.singer-profile {
+	margin-bottom: 1%;	
+}
+
+.singer-image {
+	float: none;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.even {
+	float: none;	
+}
+
+.singer-image img {
+	width: 70%;
+	height: auto;
+}
+
+
+.singer-flower {
+	float: none;
+	margin: 0 auto;
+}
+
+.singer-bio {
+	float: none;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.materials-image {
+	display: none;
+	
+}
+
+.materials-left, .materials-right {
+	width: 42%;	
+}
+
+.materials-left ul, .materials-right ul {
+	text-align: center;	
+}
+
+.materials-left ul li, .materials-right ul li {
+	margin-bottom: 29%;	
+}
+
+.thumbnails1, .thumbnails2, .thumbnails3 {
+	float:none;
+	margin: 0 auto;
+	width: 70%;	
+}
+
+
+}
+
+
+@media screen and (max-width: 850px) {
+nav ul {
+
+}
+
+nav ul li a {
+	font-size: 1.4em;	
+}
+
+.homepage-left {
+	width: 80%;
+	margin: 0 auto;
+	height: auto;
+	text-align: center;
+	float: none;
+}
+  
+  
+.homepage-left img {
+	max-width: 60%;
+	padding-top: 5%;
+}
+  
+#home-text {
+	float: none;
+	padding: 2%;
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+	
+.auditions-text1 {
+	padding-top: 2%;
+}
+	
+	
+.past-image {
+	width: 50%;
+	padding: 2%;
+	margin: 0 auto;
+	float: none;
+}
+
+.past-image2 {
+	width: 50%;
+	padding: 2%;
+	margin: 0 auto;
+	float: none;
+}
+
+.past-image img, .past-image2 img {
+	width: 100%;	
+}
+
+.past-listings {
+	float: none;	
+	width: 80%;
+	padding: 2%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.past-listings2 {
+	float: none;	
+	width: 80%;
+	padding: 2%;
+	text-align: center;
+	margin: 0 auto;
+}	
+
+.past-listings ul, .past-listings2 ul {
+	padding-left: 0;	
+}
+	
+	
+	
+	
+	
+	
+}
+
+@media screen and (max-width: 815px) {
+	nav ul {
+		padding-left: 0.5%;
+
+	}
+
+	.contact-item {
+		
+		margin-bottom: 6%;
+		
+	}
+
+	.past-column1, .past-column2 {
+
+		float: none;		
+		width: 90%;
+		margin: 0 auto;
+
+	}
+	
+	.past-column2-text, .past-column1 {
+		;
+	}
+
+	.past-column2-text ul, .past-column1 ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	.past-image-right {
+		width: 100%;
+		padding: 2% 0;
+	}
+	
+}
+
+@media screen and (max-width: 800px) {
+	nav ul {
+
+
+}
+	
+	
+}
+
+@media screen and (max-width: 785px) {
+	/* #menu is the original menu */
+	#menu {
+		display:none;
+	}
+	
+	.hidden-nav {
+		display: none;	
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+	
+	.slicknav_menu {
+		display:block;
+		background: transparent;
+	}
+	
+	.slicknav_icon {
+		display:;
+	}	
+	
+	.slicknav_nav {
+		font-size: 1.8em;
+		line-height: 1.8em;
+		text-align: center;
+	
+	}
+	
+	.slicknav_nav a {
+		font-family: papyrus, sans-serif;
+		color: #fff;
+	}
+	
+	.arrows {
+		display: none;	
+	}
+	
+	#logo {
+		text-align: center;
+		width: 90%;
+		margin: 0 auto;
+		padding: 1.5%; 
+	}
+	
+	.track-listing {
+		padding-left: 1%;	
+	}
+	
+
+}
+
+@media screen and (max-width: 600px) {
+	
+.album ol {
+	padding-left: 20%;
+}
+
+.about-left {
+
+	width: 90%;
+
+}
+
+
+.about-right {
+	width: 90%;
+
+}
+
+
+
+
+.auditions-image, .auditions-text1 {
+	float: none;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.auditions-text1 h2 {
+	margin: 0;
+	padding: 5%;
+	line-height: 1.2em;	
+}
+
+.event-listing {
+	padding-bottom: 6%;	
+}
+
+.thumbnails1, .thumbnails2, .thumbnails3 {
+	width: 90%;
+}	
+
+	
+}
